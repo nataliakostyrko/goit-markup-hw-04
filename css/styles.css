@@ -54,7 +54,8 @@ img {
 .header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .heider-container {
   display: flex;
@@ -149,6 +150,7 @@ img {
 	url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
 
 
@@ -180,7 +182,7 @@ img {
   min-width: 169px;
   margin: 0 auto;
   height: 56px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .button-section:hover,
@@ -201,7 +203,9 @@ img {
   overflow: hidden;
 }
 .our-icon {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
@@ -209,6 +213,7 @@ img {
   border: 1px solid #8e8f99;
   padding: 24px 100px;
   margin-bottom: 8px;
+  gap: 24px;
   
 }
 
@@ -329,15 +334,15 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  box-shadow:  rgba(46, 47, 66, 0.8), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
  .portfolio-list-item {
   width: calc((100% - 48px)/3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .portfolio-list-item:hover .cashless-cover-container {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 .images-portfolio {
     padding: 32px 16px;
@@ -392,7 +397,14 @@ img {
 .footer-section {
   background-color: #2e2f42;
   padding: 100px 0;
+  display: flex;
+  align-items: baseline;
 }
+
+.footer-container {
+  margin-right: 120px;
+  }
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -411,10 +423,48 @@ img {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  
 }
 .team-link {
   background-color: #ffffff;
 }
 .section-link-team {
   background-color: #f4f4fd;
+}
+.footer-social-media {
+  font-weight: 500;
+  font-size: 16px;
+  list-style: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-icon-list {
+  display: flex;
+  gap: 16px;
+  
+  
+}
+
+.footer-icon-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-icon-link {
+  width: 40px ;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+background-color: #31d0aa;
+}
+.footer-icon-icon {
+  fill: #f4f4fd;
 }
