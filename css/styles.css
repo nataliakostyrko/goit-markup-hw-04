@@ -211,7 +211,6 @@ img {
   background-color: #f4f4fd;
   border-radius: 4px;
   border: 1px solid #8e8f99;
-  padding: 24px 100px;
   margin-bottom: 8px;
   gap: 24px;
   
@@ -288,6 +287,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+  margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .icon-list {
@@ -378,7 +379,7 @@ img {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
+
 }
 
 .section-strategy-link {
@@ -398,17 +399,13 @@ img {
 }
 
 
-  
-
-
-
-
-
 .footer-section {
   background-color: #2e2f42;
   padding: 100px 0;
   
 }
+
+
 .footer-container {
   margin-right: 120px;
   }
