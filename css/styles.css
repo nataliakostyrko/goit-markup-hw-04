@@ -433,10 +433,14 @@ img {
   color: #f4f4fd;
 }
 .footer-paragraf {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
-  color: #f4f4fd;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  width: 264px;
 
 }
 .team-link {
@@ -461,10 +465,7 @@ img {
   
 }
 
-.footer-icon-item {
-  width: 40px;
-  height: 40px;
-}
+
 .footer-icon-link {
   width: 40px ;
   height: 40px;
